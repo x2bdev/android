@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="colorPrimary2">#e5cd2027</color>
+    <color name="colorPrimaryDark2">#cd2027</color>
+    <color name="colorAccent2">#FF4081</color>
+    <color name="colorTrongSuatDo">#D9cd2027</color>
+    <color name="colorTrang">#ffffff</color>
+    <color name="colorBlackBold">#000000</color>
+    <color name="colorBackGroundBlack">#66000000</color>
+    <color name="colorTrongSuotBlack">#99000000</color>
+
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1E88E5</color>
+    <color name="colorAccent">#1E88E5</color>
+    <color name="colorBackground">@android:color/transparent</color>
+    <color name="colorTintedBackground">#cdcdcd</color>
+
+    <color name="darkTheme_colorPrimary">#2196F3</color>
+    <color name="darkTheme_colorPrimaryDark">#1E88E5</color>
+    <color name="darkTheme_colorAccent">#2196F3</color>
+    <color name="darkTheme_colorBackground">#303030</color>
+    <color name="darkTheme_colorTintedBackground">#424242</color>
+
+    <color name="classic_colorPrimary">#607d8b</color>
+    <color name="classic_colorPrimaryDark">#455a64</color>
+    <color name="classic_colorAccent">#455a64</color>
+    <color name="classic_colorBackground">@android:color/transparent</color>
+    <color name="classic_colorTintedBackground">#cdcdcd</color>
+
+    <color name="classic_darkTheme_colorPrimary">#37474f</color>
+    <color name="classic_darkTheme_colorPrimaryDark">#263238</color>
+    <color name="classic_darkTheme_colorAccent">#90a4ae</color>
+    <color name="classic_darkTheme_colorBackground">#303030</color>
+    <color name="classic_darkTheme_colorTintedBackground">#263238</color>
+
+    <color name="splashBackground">#607d8b</color>
+
+    <color name="text_light">#ffffff</color>
+    <color name="text_dark">#000000</color>
+    <color name="tab_indicator">#ffffff</color>
+
+    <color name="background_layout">#B9D3EE</color>
+    <color name="tab_line">#2F4F4F</color>
+
+
+</resources>
