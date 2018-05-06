@@ -62,9 +62,11 @@
         <activity
             android:name=".Weather_Map_Activity"
             android:label="@string/title_activity_weather__map_"
-            android:theme="@style/AppTheme2"></activity>
-        <activity android:name=".BieuDoActivity"
-            android:theme="@style/AppTheme3"></activity>
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".BieuDoActivity"
+            android:theme="@style/AppTheme3" />
+        <activity android:name=".BD_thongke"></activity>
     </application>
 
 </manifest>

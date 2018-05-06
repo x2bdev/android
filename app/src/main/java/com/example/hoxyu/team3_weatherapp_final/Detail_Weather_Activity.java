@@ -101,7 +101,7 @@ public class Detail_Weather_Activity extends AppCompatActivity {
                 break;
             }
             case R.id.action_graphs:{
-                Intent intent=new Intent(Detail_Weather_Activity.this,BieuDoActivity.class);
+                Intent intent=new Intent(Detail_Weather_Activity.this,BD_thongke.class);
                 startActivity(intent);
                 break;
             }
@@ -193,7 +193,6 @@ public class Detail_Weather_Activity extends AppCompatActivity {
             }
         });
     }
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         switch (requestCode) {
@@ -213,13 +212,11 @@ public class Detail_Weather_Activity extends AppCompatActivity {
                 break;
         }
     }
-
     @Override
     protected void onResume() {
         super.onResume();
         registerReceiver(gpsLocationReceiver, new IntentFilter(BROADCAST_ACTION));//Register broadcast receiver to check the status of GPS
     }
-
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -227,7 +224,6 @@ public class Detail_Weather_Activity extends AppCompatActivity {
         if (gpsLocationReceiver != null)
             unregisterReceiver(gpsLocationReceiver);
     }
-
     //Run on UI
     private Runnable sendUpdatesToUI = new Runnable() {
         public void run() {
