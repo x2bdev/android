@@ -9,3 +9,5 @@ Danh sach bai giua ki cua nhom:
 - Nguyễn Công Việt Thanh: https://github.com/bubibubi23/ProjectDemo
 
 - Phùng Đức Chính: https://github.com/phungducchinh/Phung_Duc_Chinh_N14DCCN221
+
+- Lê Trường Tấn Nhân: https://github.com/nhan7777/recylerviewfirebasedemo
