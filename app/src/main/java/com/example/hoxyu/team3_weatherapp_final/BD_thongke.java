@@ -18,6 +18,7 @@ import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.StringRequestListener;
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.AxisBase;
+import com.github.mikephil.charting.components.Description;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
@@ -47,6 +48,33 @@ public class BD_thongke extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bd_thongke);
+
+        arrayList = new ArrayList<>();
+
+        tab();
+
+        if(isConnected()){
+            if(checkExistDate()){
+                update();
+                readData();
+                makeLineChart_nhietdo();
+                makeLineChart_doam();
+                makeLineChart_gio();
+            }else{
+                deleteFirstRow();
+                saveData();
+                readData();
+                makeLineChart_nhietdo();
+                makeLineChart_doam();
+                makeLineChart_gio();
+            }
+        }else{
+            readData();
+            makeLineChart_nhietdo();
+            makeLineChart_doam();
+            makeLineChart_gio();
+        }
+
     }
 
     private void tab(){
@@ -116,7 +144,7 @@ public class BD_thongke extends AppCompatActivity {
             String temp = cursor.getDouble(2)+"f";
             yValues.add(new Entry(i, Float.parseFloat(temp)));
         }
-        LineDataSet set1 = new LineDataSet(yValues,"Biểu đồ nhiệt độ");
+        LineDataSet set1 = new LineDataSet(yValues,"Giá trị nhiệt độ");
         set1.setFillAlpha(110);
         set1.setColor(Color.RED);
         set1.setLineWidth(3f);
@@ -136,6 +164,9 @@ public class BD_thongke extends AppCompatActivity {
             }
         });
         LineData data = new LineData(dataSets);
+        Description description = new Description();
+        description.setText("Ngày");
+        lineChart.setDescription(description);
         lineChart.setData(data);
     }
     private void makeLineChart_doam(){
@@ -156,7 +187,7 @@ public class BD_thongke extends AppCompatActivity {
             String temp = cursor.getDouble(3)+"f";
             yValues.add(new Entry(i, Float.parseFloat(temp)));
         }
-        LineDataSet set1 = new LineDataSet(yValues,"Biểu đồ độ ẩm");
+        LineDataSet set1 = new LineDataSet(yValues,"Giá trị độ ẩm");
         set1.setFillAlpha(110);
         set1.setColor(Color.BLUE);
         set1.setLineWidth(3f);
@@ -176,6 +207,9 @@ public class BD_thongke extends AppCompatActivity {
             }
         });
         LineData data = new LineData(dataSets);
+        Description description = new Description();
+        description.setText("Ngày");
+        lineChart.setDescription(description);
         lineChart.setData(data);
     }
     private void makeLineChart_gio(){
@@ -196,7 +230,7 @@ public class BD_thongke extends AppCompatActivity {
             String temp = cursor.getDouble(4)+"f";
             yValues.add(new Entry(i, Float.parseFloat(temp)));
         }
-        LineDataSet set1 = new LineDataSet(yValues,"Biểu đồ gió");
+        LineDataSet set1 = new LineDataSet(yValues,"Tốc độ gió");
         set1.setFillAlpha(110);
         set1.setColor(Color.GREEN);
         set1.setLineWidth(3f);
@@ -216,8 +250,11 @@ public class BD_thongke extends AppCompatActivity {
             }
         });
         LineData data = new LineData(dataSets);
+        Description description = new Description();
+        description.setText("Ngày");
+        lineChart.setDescription(description);
         lineChart.setData(data);
-    }
+            }
     protected  Cursor getData(){
         sqLiteDatabase = DB.initDatabase(this, DATABASE_NAME);
 
