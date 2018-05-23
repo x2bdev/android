@@ -1,9 +1,11 @@
 Danh sach bai giua ki cua nhom:
 
-- Vuu Quoc Bao: https://github.com/x2bdev/giuakiandroid
+- Vưu Quốc Bảo: https://github.com/x2bdev/giuakiandroid
 
-- Huynh Van Khoa: https://github.com/vietduchelo/quanlinhanvien_huynhvankhoa_n14dccn003
+- Huỳnh Văn Khoa: https://github.com/vietduchelo/quanlinhanvien_huynhvankhoa_n14dccn003
 
-- Tran Huynh Anh Khoa: https://github.com/AnhKhoa0801/GiuakiAndroid
+- Trần Huỳnh Anh Khoa: https://github.com/AnhKhoa0801/GiuakiAndroid
 
-- Nguyen Cong Viet Thanh: https://github.com/bubibubi23/ProjectDemo
+- Nguyễn Công Việt Thanh: https://github.com/bubibubi23/ProjectDemo
+
+- Phùng Đức Chính: https://github.com/phungducchinh/Phung_Duc_Chinh_N14DCCN221
