@@ -11,3 +11,7 @@ Danh sach bai giua ki cua nhom:
 - Phùng Đức Chính: https://github.com/phungducchinh/Phung_Duc_Chinh_N14DCCN221
 
 - Lê Trường Tấn Nhân: https://github.com/nhan7777/recylerviewfirebasedemo
+
+- Lê Minh Hảo: https://github.com/minhhao1996/KT
+
+- Dư Minh Đức: https://github.com/minhducit95/FirebaseRecyclerview
